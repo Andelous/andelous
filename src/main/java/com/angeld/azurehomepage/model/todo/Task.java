@@ -3,12 +3,31 @@ package com.angeld.azurehomepage.model.todo;
 import java.util.List;
 
 public class Task {
-    private TaskStatus status;
+    private Integer id;
+
+    private String userId;
     private String title;
     private String description;
+    private TaskStatus status;
 
-    private Task parenTask;
+    private Task parentTask;
     private List<Task> childTasks;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 
     public TaskStatus getStatus() {
         return status;
@@ -34,12 +53,12 @@ public class Task {
         this.description = description;
     }
 
-    public Task getParenTask() {
-        return parenTask;
+    public Task getParentTask() {
+        return parentTask;
     }
 
-    public void setParenTask(Task parenTask) {
-        this.parenTask = parenTask;
+    public void setParentTask(Task parenTask) {
+        this.parentTask = parenTask;
     }
 
     public List<Task> getChildTasks() {
