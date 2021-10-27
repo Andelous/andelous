@@ -49,6 +49,9 @@ public class TaskDAO {
 
     public Task insertTask(Task task) {
 
+        // TODO: Implement
+
+        return task;
     }
 
     // ------------------------------------
